@@ -1,5 +1,6 @@
 # IronMQ-Python-GAE
-IronMQ python client for Google App Engine
+Simple IronMQ python client for Google App Engine.
+It solves the issue related requests v2.3.0 which is a library not working when you use iron_mq_python(https://github.com/iron-io/iron_mq_python) on Google App Engine.
 
 ## How to use
     from ironmq import IronMQ
