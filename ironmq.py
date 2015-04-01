@@ -40,7 +40,7 @@ class IronMQ:
     
     def delete(self, queue_name, message_id):
         result = urlfetch.fetch(url=self.url + queue_name + '/messages/' + message_id, method=urlfetch.DELETE,
-            headers={'Content-Type': 'application/json', 'Authorization': 'OAuth tUb97PWl7C_K6DVT58nihqtOgZA'})
+            headers={'Content-Type': 'application/json', 'Authorization': 'OAuth ' + self.token})
              
         if 200 != result.status_code:
             print "status_code: ", result.status_code
